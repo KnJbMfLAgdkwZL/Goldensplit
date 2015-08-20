@@ -1,0 +1,177 @@
+.navbar-fixed-top
+{
+	position: static;
+}
+.navbar-inverse .navbar-nav > li > a
+{
+	color: #DAA935;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > .active > a
+{
+	color: #E7C669;
+	background-color: #3C3C3C;
+	border-bottom: 3px solid #E4B42D;
+	padding-bottom: 12px;
+}
+#menulogoimg
+{
+	height: 50px;
+	padding: 0px;
+	margin-top: -13px;
+}
+.navbar-nav
+{
+	margin-left: 100px;
+}
+#marafoncontent
+{
+	text-align: center;
+	height: 378px;
+	margin-top: 50px;
+}
+#twichvideo, #twichchat
+{
+	border: 1px solid #000;
+}
+#vktwiter
+{
+	text-align: right;
+	padding-right: 100px;
+	margin-top: 10px;
+}
+#vrazrabotke
+{
+	text-align: center;
+}
+#vrazrabotke > h1
+{
+	margin-bottom: 0.8em;
+	font-size: 40px;
+	font-weight: 700;
+	color: #F1D938;
+	text-shadow: -0 -2px 1px #000000,
+	0 -2px 1px #000000,
+	-0 2px 1px #000000,
+	0 2px 1px #000000,
+	-2px -0 1px #000000,
+	2px -0 1px #000000,
+	-2px 0 1px #000000,
+	2px 0 1px #000000,
+	-1px -2px 1px #000000,
+	1px -2px 1px #000000,
+	-1px 2px 1px #000000,
+	1px 2px 1px #000000,
+	-2px -1px 1px #000000,
+	2px -1px 1px #000000,
+	-2px 1px 1px #000000,
+	2px 1px 1px #000000,
+	-2px -2px 1px #000000,
+	2px -2px 1px #000000,
+	-2px 2px 1px #000000,
+	2px 2px 1px #000000,
+	-2px -2px 1px #000000,
+	2px -2px 1px #000000,
+	-2px 2px 1px #000000,
+	2px 2px 1px #000000;
+
+}
+.logrefprof
+{
+	padding: 0px;
+	margin: 0px;
+	font-size: 11px !important;
+	/*left: 98.1234567%;*/
+	/*right: 0px;*/
+	float: right !important;
+}
+.navbar-inverse .navbar-nav > .logrefprof > a
+{
+	padding: 2px 17px;
+	margin: 12px 4px;
+	border: 1px solid #808080;
+	border-radius: 2px;
+	color: #808080 !important;
+	text-transform: capitalize;
+}
+.navbar-inverse .navbar-nav > .logrefprof > a:hover
+{
+	color: #ffffff !important;
+}
+.navbar-inverse .navbar-nav > .logrefprof:hover
+{
+	color: #ffffff !important;
+}
+.navbar-inverse .navbar-nav > .logrefprof > #loginbt
+{
+	background-color: #C7A134;
+	color: #ffffff !important;
+}
+.leftbutonprof
+{
+	padding: 0px;
+	margin: 0px;
+	font-size: 11px !important;
+	float: right !important;
+}
+.leftbutonprof > a
+{
+	text-transform: capitalize !important;
+}
+.navbar-nav
+{
+	width: 86.123456789%;
+}
+.logoutico, .logoutico > a, .logoutico > a > img
+{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.profname, .profname > a, .profname > a > img
+{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.profname > a
+{
+	padding: 2px !important;
+	border: none !important;
+}
+.profname, .profname > a
+{
+	background: transparent !important;
+}
+.profname
+{
+	margin-right: 10px !important;
+}
+.profname > a > img
+{
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	width: 46px;
+	height: 46px;
+	border-radius: 150px;
+	border: 1px solid #000000;
+}
+.logoutico > a > img
+{
+	height: 50px;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+@media (max-width: 1184px)
+{
+	.navbar-nav
+	{
+		width: auto;
+	}
+}
+@media (max-width: 969px)
+{
+	.navbar-nav
+	{
+		margin-left: 0px;
+	}
+}
