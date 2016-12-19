@@ -25,7 +25,7 @@ AppAsset::register($this);
 
 		<div class="wrap">
 			<?php
-			$logo = '<img id="menulogoimg" alt="goldensplit" src="http://static-cdn.jtvnw.net/jtv_user_pictures/goldensplit-profile_image-50bd4b5ae651a54e-300x300.png">';
+			$logo = '<img id="menulogoimg" src="/web/MyImg/goldensplit.png">';
 			NavBar::begin([
 				'brandLabel' => $logo,
 				'brandUrl' => Yii::$app->homeUrl,

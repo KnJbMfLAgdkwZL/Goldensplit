@@ -1,34 +1,21 @@
 <?php
-use yii\widgets\ActiveForm;
-use yii\helpers\Html;
 use app\components\Access;
-use app\components\UsersFilesHTML;
-
-$this->title = 'Goldensplit | Профиль';
-
-$username = Yii::$app->user->identity->username;
-echo "<h1 id='username'>{$username}</h1>";
-$src = UsersFilesHTML::GetSRC($model->avatar);
 ?>
 
-<img id='avatarimg' src="<?= $src ?>"/>
+<h1 id="username">admin</h1>
+<img id="avatarimg" src="./web/MyImg/usersavatar/2e8c8e559bd7440d6889bbe954599175.jpg">
 <div class="stype-form">
-	<?php
-	$form = ActiveForm::begin(['options' => ['id' => 'FileUploadForm', 'enctype' => 'multipart/form-data']]);
-	echo $form->field($upload, 'file')->fileInput()->label('Avatar');
-	?>
-	<?= $form->field($model, 'YouTube')->textInput(['maxlength' => 255]) ?>
-	<?= $form->field($model, 'Twitch')->textInput(['maxlength' => 255]) ?>
-	<?= $form->field($model, 'VK')->textInput(['maxlength' => 255]) ?>
-	<?= $form->field($model, 'Twitter')->textInput(['maxlength' => 255]) ?>
-
-	<?= $form->field($model, 'About')->textarea(['rows' => 6]) ?>
-	<div class="form-group">
-		<?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Сохранить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn
-        btn-primary']) ?>
+	<div id="FileUploadForm">
+		<div class="form-group field-userinfo-about">
+			<label class="control-label">Обо мне</label>
+			<div>
+				<?= $model->About ?>
+			</div>
+		</div>
 	</div>
-	<?php ActiveForm::end(); ?>
 </div>
+<?php
+?>
 <div id='icons'>
 	<?php
 	if (Access::ChekIs($model->YouTube))

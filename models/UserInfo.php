@@ -12,7 +12,8 @@ class UserInfo extends \yii\db\ActiveRecord
 		return [
 			[['user_id'], 'required'],
 			[['user_id'], 'integer'],
-			[['avatar', 'YouTube', 'Twitch', 'VK', 'Twitter'], 'string', 'max' => 255]
+			[['avatar', 'YouTube', 'Twitch', 'VK', 'Twitter'], 'string', 'max' => 255],
+			[['About'], 'string']
 		];
 	}
 	public function attributeLabels()
@@ -25,6 +26,7 @@ class UserInfo extends \yii\db\ActiveRecord
 			'Twitch' => 'Twitch',
 			'VK' => 'Vk',
 			'Twitter' => 'Twitter',
+			'About' => 'О вас',
 		];
 	}
 	public static function GetUserInfo($id)

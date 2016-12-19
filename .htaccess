@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^goldensplit\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.goldensplit\.com$
+RewriteRule ^/?$ "http\:\/\/goldensplit\.ru\/" [R=301,L]
+

@@ -1,5 +1,4 @@
 <?php
-
 namespace app\controllers;
 use app\models\News;
 use app\models\UserInfo;
@@ -13,7 +12,23 @@ use yii\web\UploadedFile;
 use app\models\UploadForm;
 use yii\web\User;
 class SiteController extends Controller
-{
+{	
+	/*public function beforeAction($action)
+	{
+		echo '<pre>';
+		echo '$_GET';
+		print_r($_GET);
+		echo '$_POST';
+		print_r($_POST);
+		echo '$_SESSION';
+		session_start();
+		print_r($_SESSION);
+		echo '</pre>';
+		
+		
+        $this->enableCsrfValidation = ($action->id !== "login");
+        return parent::beforeAction($action);
+    }*/
 	public function behaviors()
 	{
 		return [
@@ -102,6 +117,15 @@ class SiteController extends Controller
 		}
 		return $this->render('registration', ['model' => $model]);
 	}
+	public function actionProfile_view($id)
+	{
+		$model = UserInfo::GetUserInfo($id);
+		if(!Access::ChekIs($model))
+		{
+			return $this->goHome();
+		}
+		return $this->render('profile_view', ['model' => $model]);
+	}
 	public function actionProfile()
 	{
 		if (Yii::$app->user->isGuest)
@@ -145,6 +169,10 @@ class SiteController extends Controller
 					}
 				}
 			}
+			$model->YouTube = strip_tags($model->YouTube);
+			$model->Twitch = strip_tags($model->Twitch);
+			$model->VK = strip_tags($model->VK);
+			$model->Twitter = strip_tags($model->Twitter);
 			$model->save();
 			$this->redirect('/index.php?r=site/profile');
 		}
