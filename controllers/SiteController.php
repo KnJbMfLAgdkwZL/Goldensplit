@@ -12,23 +12,8 @@ use yii\web\UploadedFile;
 use app\models\UploadForm;
 use yii\web\User;
 class SiteController extends Controller
-{	
-	/*public function beforeAction($action)
-	{
-		echo '<pre>';
-		echo '$_GET';
-		print_r($_GET);
-		echo '$_POST';
-		print_r($_POST);
-		echo '$_SESSION';
-		session_start();
-		print_r($_SESSION);
-		echo '</pre>';
-		
-		
-        $this->enableCsrfValidation = ($action->id !== "login");
-        return parent::beforeAction($action);
-    }*/
+{
+	private $salt = 'k5Go3Z0ib1RefT4u';
 	public function behaviors()
 	{
 		return [
@@ -70,14 +55,16 @@ class SiteController extends Controller
 			return $this->goHome();
 		}
 		$model = new LoginForm();
-		if ($model->load(Yii::$app->request->post()) && $model->login())
+		if ($model->load(Yii::$app->request->post()))
 		{
-			return $this->goBack();
+			$model->password = md5($model->password . $this->salt);
+			if($model->login())
+			{
+				return $this->goBack();
+			}
+			$model->password = '';
 		}
-		else
-		{
-			return $this->render('login', ['model' => $model,]);
-		}
+		return $this->render('login', ['model' => $model,]);
 	}
 	public function actionLogout()
 	{
@@ -108,12 +95,16 @@ class SiteController extends Controller
 		$model = new \app\models\User();
 		if ($model->load(Yii::$app->request->post()))
 		{
+			$password = $model->password;
+			
+			$model->password = md5($model->password . $this->salt);
+			
 			$model->role = 'User';
 			$model->save();
 			$userinfo = new UserInfo();
 			$userinfo->user_id = $model->id;
 			$userinfo->save();
-			return $this->render('registrationok', ['username' => $model->username, 'password' => $model->password]);
+			return $this->render('registrationok', ['username' => $model->username, 'password' => $password]);
 		}
 		return $this->render('registration', ['model' => $model]);
 	}

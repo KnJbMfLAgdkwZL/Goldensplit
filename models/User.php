@@ -52,6 +52,15 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
 		}
 		return new static($user);
 	}
+	public static function findById($id)
+	{
+		$user = self::find()->where(["id" => $id])->one();
+		if (!count($user))
+		{
+			return null;
+		}
+		return new static($user);
+	}
 	public function getId()
 	{
 		return $this->id;

@@ -3,7 +3,8 @@ use app\models\NewsComment;
 $path = './web/MyImg/newsfiles/';
 $id = $model->id;
 $head = $model->head;
-$imghead = $model->imghead;
+//$imghead = $model->imghead;
+$imghead = $model->imganons;
 $body = $model->body;
 $date = $model->date;
 if (mb_strlen($body, 'UTF-8') >= 750)

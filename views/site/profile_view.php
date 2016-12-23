@@ -1,9 +1,17 @@
 <?php
 use app\components\Access;
+use app\models\User;
+use yii\helpers\Html;
+use app\components\UsersFilesHTML;
+
+$user = User::findById($model->user_id);
+$username = $user->username;
+$src = UsersFilesHTML::GetSRC($model->avatar);
+
 ?>
 
-<h1 id="username">admin</h1>
-<img id="avatarimg" src="./web/MyImg/usersavatar/2e8c8e559bd7440d6889bbe954599175.jpg">
+<h1 id="username"><?= $username ?></h1>
+<img id="avatarimg" src="<?= $src ?>">
 <div class="stype-form">
 	<div id="FileUploadForm">
 		<div class="form-group field-userinfo-about">
@@ -21,44 +29,44 @@ use app\components\Access;
 	if (Access::ChekIs($model->YouTube))
 	{
 		$src = $model->YouTube;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		echo "<a href='{$src}'>
+		}*/
+		echo "<a href='https://www.youtube.com/channel/{$src}'>
 			<img src='/web/MyImg/youtubeimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($model->Twitch))
 	{
 		$src = $model->Twitch;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		echo "<a href='{$src}'>
+		}*/
+		echo "<a href='http://www.twitch.tv/{$src}'>
 			<img src='/web/MyImg/twitchimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($model->VK))
 	{
 		$src = $model->VK;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		echo "<a href='{$src}'>
+		}*/
+		echo "<a href='http://vk.com/{$src}'>
 			<img src='/web/MyImg/vkimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($model->Twitter))
 	{
 		$src = $model->Twitter;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		echo "<a href='{$src}'>
+		}*/
+		echo "<a href='https://twitter.com/{$src}'>
 			<img src='/web/MyImg/twiterimg.png'/>
 		</a>";
 	}

@@ -34,44 +34,44 @@ $src = UsersFilesHTML::GetSRC($model->avatar);
 	if (Access::ChekIs($model->YouTube))
 	{
 		$src = $model->YouTube;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		echo "<a href='{$src}'>
+		}*/
+		echo "<a href='https://www.youtube.com/channel/{$src}'>
 			<img src='/web/MyImg/youtubeimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($model->Twitch))
 	{
 		$src = $model->Twitch;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		echo "<a href='{$src}'>
+		}*/
+		echo "<a href='http://www.twitch.tv/{$src}'>
 			<img src='/web/MyImg/twitchimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($model->VK))
 	{
 		$src = $model->VK;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		echo "<a href='{$src}'>
+		}*/
+		echo "<a href='http://vk.com/{$src}'>
 			<img src='/web/MyImg/vkimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($model->Twitter))
 	{
 		$src = $model->Twitter;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		echo "<a href='{$src}'>
+		}*/
+		echo "<a href='https://twitter.com/{$src}'>
 			<img src='/web/MyImg/twiterimg.png'/>
 		</a>";
 	}
@@ -82,7 +82,8 @@ $src = UsersFilesHTML::GetSRC($model->avatar);
 	#uploadform-file
 	{
 		border: 1px solid black;
-		height: 34px;
+		/*height: 34px;*/
+		padding: 5px;
 	}
 	.form-control, #uploadform-file
 	{
@@ -95,9 +96,10 @@ $src = UsersFilesHTML::GetSRC($model->avatar);
 	}
 	.stype-form
 	{
-		position: absolute;
+		margin-top: 20px;
+		/*position: absolute;
 		top: 143px;
-		left: 290px;
+		left: 290px;*/
 	}
 	#avatarimg
 	{

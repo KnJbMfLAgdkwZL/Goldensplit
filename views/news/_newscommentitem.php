@@ -18,44 +18,44 @@ if (Access::ChekIs($user))
 	if (Access::ChekIs($userinfo->YouTube))
 	{
 		$src = $userinfo->YouTube;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		$contactsuser .= "<a href='{$src}'>
+		}*/
+		$contactsuser .= "<a href='https://www.youtube.com/channel/{$src}'>
 			<img src='/web/MyImg/youtubeimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($userinfo->Twitch))
 	{
 		$src = $userinfo->Twitch;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		$contactsuser .= "<a href='{$src}'>
+		}*/
+		$contactsuser .= "<a href='http://www.twitch.tv/{$src}'>
 			<img src='/web/MyImg/twitchimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($userinfo->VK))
 	{
 		$src = $userinfo->VK;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		$contactsuser .= "<a href='{$src}'>
+		}*/
+		$contactsuser .= "<a href='http://vk.com/{$src}'>
 			<img src='/web/MyImg/vkimg.png'/>
 		</a>";
 	}
 	if (Access::ChekIs($userinfo->Twitter))
 	{
 		$src = $userinfo->Twitter;
-		if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
+		/*if (strpos($src, 'http://') === false && strpos($src, 'https://') === false)
 		{
 			$src = 'http://' . $src;
-		}
-		$contactsuser .= "<a href='{$src}'>
+		}*/
+		$contactsuser .= "<a href='https://twitter.com/{$src}'>
 			<img src='/web/MyImg/twiterimg.png'/>
 		</a>";
 	}
