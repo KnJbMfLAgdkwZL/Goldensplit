@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Авг 25 2015 г., 03:53
+-- Время создания: Сен 06 2015 г., 09:02
 -- Версия сервера: 5.5.42-cll
 -- Версия PHP: 5.4.31
 
@@ -38,10 +38,10 @@ CREATE TABLE IF NOT EXISTS `marathon_baners` (
 --
 
 INSERT INTO `marathon_baners` (`id`, `head`, `body`) VALUES
-(1, 'О МАРАФОНЕ', '<p>Lorem ipsum dolor site amet, consectetur adipiscing elit.<br />\r\nCurabitur non viverra enim, <strong><span style="color:#0000CD">vitae tristique erat</span></strong>. Sed accumsan maximus sodales.</p>\r\n\r\n<p>fghgfhfgh</p>\r\n'),
-(2, 'F.A.Q.', '<p>hfghfghfg&nbsp; fghfg fgh fgh fgh<br />\r\n<img alt="" src="https://www.google.com.ua/images/srpr/logo11w.png" style="height:35px; width:100px" /></p>\r\n\r\n<p>&nbsp;fgh fg hfg hfgh fg hfg hfg fg h</p>\r\n\r\n<p><a href="http://vk.com">http://vk.com</a></p>\r\n\r\n<p>f gfh fghfghfghfghfghfghfgh</p>\r\n\r\n<p>&nbsp;</p>\r\n'),
-(3, 'РАСПИСАНИЕ', '<p>Тело расписания выаыва ыва выа ыва ыв</p>\r\n\r\n<p>аыва ыва ыва ыва выа вы аыв авы ыв аыв аыв</p>\r\n'),
-(4, 'ГДЕ И КОГДА?', '<p>апрап ап рпа рап45646 456 45 645 645 45 45645 54</p>\r\n');
+(1, 'О МАРАФОНЕ', '<p>Это самый большой благотворительный марафон игр, который проводится два раза в год.</p>\r\n\r\n<p>Лучшие игроки со всего мира собираются вместе чтобы пройти ваши любимые игры как можно быстрее и показать такие навыки, которые вы никогда не видели!</p>\r\n\r\n<p>&nbsp;</p>\r\n'),
+(2, 'F.A.Q.', '<p>TBD</p>\r\n'),
+(3, 'РАСПИСАНИЕ', '<p>TBA</p>\r\n'),
+(4, 'ГДЕ И КОГДА?', '<p>TBA</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -60,75 +60,14 @@ CREATE TABLE IF NOT EXISTS `news` (
   `priority` int(11) DEFAULT '0',
   `date` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=97 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=100 ;
 
 --
 -- Дамп данных таблицы `news`
 --
 
 INSERT INTO `news` (`id`, `head`, `body`, `anons`, `imghead`, `imganons`, `bind`, `priority`, `date`) VALUES
-(58, 'pppppppppppppp', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(57, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(51, 'ghjghj', '<p>gjghjgh</p>\r\n', 'jgjgh', '', '', b'0', 0, 1439991719),
-(52, 'ghjgh', '<p>jghjgh</p>\r\n', 'jghjghj', '', '', b'0', 0, 1439991727),
-(48, 'gghjgh', '<p>jghjghjghj</p>\r\n', 'ghjghjghj', '', '', b'0', 0, 1439991691),
-(56, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(55, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(54, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(53, 'qqq', '<p>ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg</p>\r\n\r\n<p>ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg</p>\r\n\r\n<p>ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg ghjghjg</p>\r\n', 'hjghjghj', '', '', b'0', 10, 1439991747),
-(50, 'wwww', '<p>jghjghj</p>\r\n', 'ghjgh', '', '', b'1', 0, 1439991709),
-(49, 'gjgh', '<p>jghjghjg</p>\r\n', 'hjghjghj', '', '', b'0', 0, 1439991702),
-(47, 'eeee', '<p>jghjgh</p>\r\n', 'dfgfdg dfg dfg dfg df gdf gdfg d gdf gdf df gdf gdf gdf df df df gdf gdf gdf gdf gd d dg dfg dfg df gdfg dfg dfg dfg dfg df gdfg dfg df gdf', '', '', b'1', 0, 1439991682),
-(46, 'ghj', '<p>ghjhgj</p>\r\n', 'ghjghjgh', '', '', b'0', 0, 1439991674),
-(45, 'rrrr', '<p>jghjg</p>\r\n', 'sdfsdf sdf sdf sdfsd fsdf sd fsdf sd fsd fsdf sd fsd fsd fsdf sd fsdf sd fsdf sd fsd fsd fsd sd sd sd sd fsd fsd', '', '', b'1', 0, 1439991663),
-(44, 'ghjghj', '<p>ghjghj</p>\r\n', 'ghjghj', '', '', b'0', 0, 1439991654),
-(43, 'tttt', '<p>ghjgh</p>\r\n', 'jghjghj', '', '', b'1', 0, 1439991646),
-(42, 'gjgh', '<p>jghjghjgh</p>\r\n', 'jghjghj', '', '', b'0', 0, 1439991637),
-(38, 'ghgjgh', '<p>jghjg</p>\r\n', 'jgh', '', '', b'0', 0, 1439991604),
-(39, 'gjgh', '<p>jghjghj</p>\r\n', 'gjgjghj', '', '', b'0', 0, 1439991612),
-(40, 'ghjgh', '<p>jghjgh</p>\r\n', 'jghjghj', '', '', b'0', 0, 1439991620),
-(41, 'ghjgh', '<p>jghjgh</p>\r\n', 'jghjghj', '', '', b'0', 0, 1439991628),
-(37, 'ghjgh', '<p>jghjg</p>\r\n', 'hjghj', '', '', b'0', 0, 1439991597),
-(35, 'hghj', '<p>gjghjghj</p>\r\n', 'ghjghjgh', '', '', b'0', 0, 1439991582),
-(36, 'gj', '<p>ghjghj</p>\r\n', 'ghjghj', '', '', b'0', 0, 1439991589),
-(59, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(60, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(61, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(62, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(63, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(64, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(65, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(66, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(67, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(68, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(69, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(70, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(71, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(72, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(73, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(74, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(75, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(76, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(77, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(78, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(79, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(80, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(81, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(82, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(83, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(84, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(85, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(86, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(87, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(88, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(89, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(90, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(91, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(92, 'ddfgdfg', 'etertert', 'dfgdgdfg', '', '', b'0', 0, 0),
-(93, 'dddddd', 'Для создания вики-среды необходимо особое ПО — движок вики. Это частный вид систем управления сайтом, довольно простой в своём устройстве и функциональности, поскольку почти все действия по структурированию и обработке содержимого делаются пользователями вручную.\n\nРабота Википедии и других сайтов Фонда Викимедиа основана на движке MediaWiki.\n\nФирма Kaltura совместно с фондом Викимедиа разрабатывает расширение, которое позволит пользователям править медиафайлы так же легко, как сейчас правят тексты. Используемую технологию называют «видеовики».\nОсобенности\n\nЯзык вики поддерживает гиперссылки для создания ссылок между вики-страницами и является более наглядным, чем HTML, и более безопасным, поскольку использование JavaScript и каскадных таблиц стилей ограничено.\nВандализм\n\nНекоторые вики позволяют изменять их содержимое всем желающим, а не только зарегистрированным пользователям. Подобно тому, как стены зданий и заборы исписывают непристойными надписями и украшают рисунками граффити, в таких вики иногда портят содержимое или добавляют что-то неуместное. Но, в отличие от стен и заборов, в вики легко вернуть содержимое к ранней версии: исправлять легче, чем портить. Если же кто-либо настойчиво и намеренно стремится навредить пользователям вики-сайта, можно закрыть ему возможность вносить правки.', 'Впервые термин «вики» для описания веб-сайта был использован в 1995 году Уордом Каннингемом, разработчиком первой вики-системы WikiWikiWeb, «Портлендского хранилища образцов» программного кода[2], созданной 25 марта 1995 года, который заимствовал слово гавайского языка, означающее «быстрый»[3][4]. Каннингем первоначально описал вики как «простейшую онлайн-базу данных, которая может функционировать»[5]. Позже этому слову был придуман английский бэкроним "What I Know Is…" («то, что я знаю, это…»)[6].', '', '', b'1', 2, 1439999336),
-(94, 'Линейные корабли типа «Норт Кэролайн» ', '<p>Линейные корабли типа &laquo;Норт Кэролайн&raquo; &mdash; проект линейных кораблей ВМС США. Первые американские линкоры, построенные после окончания действия Вашингтонского договора. Всего было построено два корабля &mdash; &laquo;Норт Кэролайн&raquo; и &laquo;Вашингтон&raquo;. Линкоры проектировались в рамках ограничений Лондонского соглашения 1936 года &mdash; максимальный калибр орудий 356 мм, водоизмещение 35 000 длинных тонн. Первоначальный проект предполагал вооружение из двенадцати 356-мм орудий. Япония не присоединилась к финальному протоколу Лондонского соглашения, после чего договорное ограничение калибра было увеличено до 406 мм. На этом основании в проект были внесены изменения и вооружение изменено на девять 406-мм орудий. Уровень бронирования остался соответствующим противодействию 356-мм снарядам. Линкоры получили мощную батарею из двадцати 127-мм орудий. В годы войны неудачные 28-мм зенитные автоматы были заменены на 40-мм &laquo;Бофорсы&raquo; и 20-мм &laquo;Эрликоны&raquo;. На Тихом океане основной ударной силой становились авианосцы. Поэтому благодаря хорошей защищенности и мощной зенитной артиллерии американские линкоры чаще привлекались для задач обеспечения ПВО авианосных соединений, чем для боев с японскими артиллерийскими кораблями. К концу войны линкоры привлекались к обстрелу береговых целей. Оба линкора часто использовались в многочисленных боевых операциях на Тихом океане. Прошли всю Вторую мировую войну, получив каждый больше десяти боевых звёзд. После войны выведены в резерв. &laquo;Вашингтон&raquo; списан и разделан на металл, а &laquo;Норт Кэролайн&raquo; превращена в музейный корабль на мемориале в Уилмингтоне. Лондонским соглашением 1930 года &laquo;линкорные каникулы&raquo; были продлены до 31 декабря 1936 года, поэтому Генеральный Совет флота (англ. General Board of the United States Navy) начал проектные исследования быстроходных линкоров программы 1937 года только в мае 1935 года. 11 июля была заказана разработка трёх проектов быстроходных линкоров &mdash; А, В и С. В требованиях к ним содержались батарея из 127-мм универсальных орудий, 30-узловая максимальная скорость и дальность хода в 15 000 миль на 15 узлах. Противоторпедная защита должна была рассчитываться на противостояние взрыву 317 кг (700 фунтов) ТНТ. При этом пошли на снижение требований &mdash; контрактную скорость корабли должны были развить при половинном запасе топлива, а не полном, как на предыдущих линкорах[2][3]. Схема А В схеме А три трёхорудийные башни располагались в носу, в схеме В и С ба</p>\r\n', 'Линейные корабли типа «Норт Кэролайн» — проект линейных кораблей ВМС США. Первые американские линкоры, построенные после окончания действия Вашингтонского договора. Всего было построено два корабля — «Норт Кэролайн» и «Вашингтон».', 'cb9e9aae42d3b11ed2779b35a13fc4b0.jpg', '4dfbe67eb6c1624730d02db06bfc1a1c.jpg', b'0', 0, 1440089703),
-(95, 'Кинопанорама', '<p>Кинопанорама &mdash; советская панорамная кинематографическая система, использовавшая для съёмки и проекции изображения три 35-мм киноплёнки. Разработана в московском Научно-исследовательском кинофотоинституте (НИКФИ) на основе американской системы &laquo;Cinerama&raquo; под руководством Евсея Голдовского и введена в эксплуатацию в 1957 году[1][2]. Первоначальное название &laquo;Панорама&raquo; через год было заменено на более информативное. В странах, где демонстрировались советские фильмы, снятые по этой системе (Куба, Греция, Норвегия и Швеция), она называлась Soviet Cinerama. Во время проката фильмов &laquo;Кинопанорамы&raquo; в Нью-Йорке в 1958 году использовался бренд Cinepanorama. Экран панорамного кинотеатра позднего типа: благодаря уменьшенному изгибу отсутствуют боковые части из отдельных полос В отличие от обычных систем кинематографа, изображение &laquo;Кинопанорамы&raquo; заполняло экран, угловые размеры которого превосходили поле зрения человека. При съёмке охватывалось пространство не только перед камерой, но и по бокам от киносъёмочного аппарата, обеспечивая панорамный обзор. В результате границы кадра становились практически незаметны зрителям, усиливая эффект присутствия.</p>\r\n', 'Кинопанорама — советская панорамная кинематографическая система, использовавшая для съёмки и проекции изображения три 35-мм киноплёнки. Разработана в московском Научно-исследовательском кинофотоинституте (НИКФИ) на основе американской системы «Cinerama» под руководством Евсея Голдовского и введена в эксплуатацию в 1957 году[1][2]. ', '533cbf37b55a0b862d846e9e561053a4.jpg', 'd74b4fd1de87dbb61e6b0fd92d761c8b.jpg', b'1', 10, 1440090042),
-(96, 'Test test', '<p>qweqwew qwewq&nbsp; sad sadsa sad</p>\r\n', 'asdsad z z zx  z czxcxz  gdfgd', '4002142c2acf8c9c8d657bf36b86d0f4.png', '8bdf83baf36224581077b9211f5fc471.jpg', b'0', 0, 1440351914);
+(99, 'Время быть быстрым! ', '<p style="margin-left:40px"><big><span style="font-size:18px">Я долго думал о чем написать в первой новости сайта GoldenSplit. Просто сказать &quot;Добро пожаловать!&quot;? Рассказать в подробностях, что такое спидраны, с чем их едят и зачем это делают?</span></big><big><span style="font-size:18px">&nbsp;</span></big></p>\r\n\r\n<p style="margin-left:40px"><big><span style="font-size:18px">Об этом всем мы обязательно расскажем вам в последющих новостях. В том числе и о развитии сайта.</span></big></p>\r\n\r\n<p style="margin-left:40px"><big><span style="font-size:18px">Но не в этот раз.</span></big></p>\r\n\r\n<p style="margin-left:40px"><big><span style="font-size:18px">Начнем вот с чего - мы отстаем.</span></big></p>\r\n\r\n<hr />\r\n<p>Отстаем от зарубежных спидраннеров, от игровой индустрии в целом и игровыми событиями. Плохо ли это? Скорее всего.&nbsp;Тем не менее я считаю это стимулом. Я более чем уверен, что нам не составит труда войти в мировые таблицы рекордов многих игр, устроить в будущем такие мероприятия, на которые приедут зарубежные игроки и показать чем так интересна игровая индустрия в целом.</p>\r\n\r\n<p>Спидраны, это лишь лишь часть всего этого, но я надеюсь, что этот сайт поможет этой самой части окрепнуть и&nbsp;собрать сильное сообщество вокруг себя.&nbsp;</p>\r\n\r\n<p style="text-align:center"><strong>Ну что же, приступим?</strong>&nbsp;</p>\r\n\r\n<p style="text-align: center;"><img alt="" src="http://i.imgur.com/RxcdPYD.png" style="height:437px; width:1000px" /></p>\r\n\r\n<p>&nbsp;</p>\r\n', 'Выше, быстрее, лучше!', '03a7a81ddd1d4f291797971f10379c1a.png', 'aca4ad21da4e65a5884c7a1fa47d0f4b.png', b'1', 0, 1441314838);
 
 -- --------------------------------------------------------
 
@@ -143,48 +82,17 @@ CREATE TABLE IF NOT EXISTS `news_comment` (
   `message` text NOT NULL,
   `date` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=37 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=45 ;
 
 --
 -- Дамп данных таблицы `news_comment`
 --
 
 INSERT INTO `news_comment` (`id`, `news_id`, `user_id`, `message`, `date`) VALUES
-(1, 93, 1, 'gghjghj', 1440073696),
-(2, 93, 1, 'gjghjghj', 1440073783),
-(3, 93, 1, 'gjghjghj', 1440073872),
-(4, 93, 1, 'ihhkhjkhk', 1440073884),
-(5, 93, 1, '34543 hfghgf hfgh fg hfgh fg hfg', 1440081511),
-(6, 93, 1, 'hfghfg\r\ngfhfg\r\nhfg\r\nh\r\nfgh\r\nfg\r\nh\r\nfg\r\nhfg\r\nh\r\nfgh\r\nfg\r\nh\r\nfg\r\nhf\r\ngh\r\nfg', 1440082080),
-(7, 93, 1, 'fhfhgf\r\n<br/>\r\ngf\r\n<br/>\r\nhgf\r\n<br/>\r\nh\r\n<br/>\r\ngf\r\nhgf', 1440082105),
-(8, 93, 1, 'fhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>\r\nfhfhgf <br/>', 1440082125),
-(9, 93, 1, 'gfhfghgfh', 1440082458),
-(10, 93, 1, 'rtyrtyrtyrty', 1440082533),
-(11, 93, 1, '213213213213', 1440082600),
-(12, 93, 1, 'итмитмит', 1440082615),
-(13, 93, 1, 'рпопопро', 1440084379),
-(14, 93, 1, 'рпопро', 1440084435),
-(15, 93, 1, '1231', 1440084441),
-(16, 93, 1, '234', 1440084446),
-(17, 93, 1, '345', 1440084450),
-(18, 93, 1, '456546', 1440084455),
-(19, 93, 1, '5675', 1440084460),
-(20, 93, 1, '67876', 1440084464),
-(21, 93, 1, '7897', 1440084469),
-(22, 93, 1, '89089', 1440084481),
-(23, 93, 1, 'fghfgh', 1440085389),
-(24, 93, 1, '56765756', 1440085396),
-(25, 93, 1, 'yuytut', 1440085402),
-(26, 93, 1, '7686867', 1440085410),
-(27, 53, 1, 'hkgkhj', 1440085418),
-(28, 53, 1, 'fghfghg', 1440085444),
-(29, 93, 1, 'hhjkhjk', 1440085562),
-(30, 53, 1, 'hkhjkj', 1440085569),
-(31, 52, 1, 'jkljkl', 1440085579),
-(35, 95, 1, 'dgdfg', 1440351626),
-(33, 94, 1, 'Очень круто', 1440089730),
-(34, 95, 1, '2432423432', 1440100221),
-(36, 96, 23, 'ну я рад что открыли, надеюсь пароли вы храните не в открытом виде. Потому что то, что после регистрации пароль явно написан на странице уже пугает.', 1440415176);
+(44, 99, 35, 'Отпишусь на главной. Всем привет, ну вот и сайт подрубили. ', 1441409233),
+(42, 99, 27, 'Божечки-кошечки!', 1441364407),
+(43, 99, 32, 'Надеюсь, сайт будет развиваться :3', 1441365190),
+(41, 99, 1, 'Так как мы пока только прикручиваем все нужные функции - можно общаться в комментариях.', 1441315917);
 
 -- --------------------------------------------------------
 
@@ -199,16 +107,25 @@ CREATE TABLE IF NOT EXISTS `user` (
   `role` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `login` (`username`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=24 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=37 ;
 
 --
 -- Дамп данных таблицы `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `role`) VALUES
-(1, 'admin', '456789', 'Admin'),
-(22, 'qqqq', 'wwww', 'User'),
-(23, 'SUDALV', 'ivanteevka', 'User');
+(1, 'admin', '1e79ed14ce9306a96ab5ea0210115c26', 'Admin'),
+(23, 'SUDALV', '49fc20357a9cad69a8a3a68da0639a37', 'User'),
+(28, 'MushroomBear', '9f2d844f373d924b86090862816c6320', 'User'),
+(27, 'Tezur0', 'ad3849b40eefd97c5e1edc31aee7c089', 'User'),
+(29, 'Nikko', 'e6043410a6598dc68bef27bdf91fba63', 'User'),
+(30, 'Sauron', '3a2dafc05ace6f9d26ac6b81c0b6a15f', 'User'),
+(31, 'H1kH', 'cb0dff9469bd4f287f273af7f599e719', 'User'),
+(32, 'Mousou', '01ef7ddd5e1ffdb171ae391e39b3eddc', 'User'),
+(33, 'Hkaas', '9f77e6b567aa35429ed3ab6e4b3cd3c8', 'User'),
+(34, 'Smartkin', '758fc9e931ecd5cbfad0df227faef04d', 'User'),
+(35, 'Rubiha', '033e66288a4cd0b0d94f15968d6bbc31', 'User'),
+(36, 'Sidriall', '6ef0e1599312ab4a14681d4bb13da548', 'User');
 
 -- --------------------------------------------------------
 
@@ -227,16 +144,25 @@ CREATE TABLE IF NOT EXISTS `user_info` (
   `About` text NOT NULL,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
 
 --
 -- Дамп данных таблицы `user_info`
 --
 
 INSERT INTO `user_info` (`id`, `user_id`, `avatar`, `YouTube`, `Twitch`, `VK`, `Twitter`, `About`) VALUES
-(1, 1, '2e8c8e559bd7440d6889bbe954599175.jpg', 'https://www.youtube.com/channel/UCXlXeR3MQo-UvhdxPXmALgg', 'http://www.twitch.tv/m0e_tv', 'http://vk.com/bukatahanna', 'https://twitter.com/melissa_simoni/status/464375388756398082', 'Я тут главный админ'),
-(8, 22, NULL, NULL, NULL, NULL, NULL, ''),
-(9, 23, NULL, NULL, NULL, NULL, NULL, '');
+(1, 1, '2e8c8e559bd7440d6889bbe954599175.jpg', '', '', 'gamesdonequick', '', 'Я тут главный админ'),
+(20, 34, 'e103e373deeaf0a8614a13755842f61d.jpg', '', '', '', '', ''),
+(15, 29, NULL, NULL, NULL, NULL, NULL, ''),
+(16, 30, NULL, '', '', 'https://vk.com/4head_kappa', '', ''),
+(14, 28, NULL, NULL, NULL, NULL, NULL, ''),
+(9, 23, NULL, NULL, NULL, NULL, NULL, ''),
+(22, 36, NULL, NULL, NULL, NULL, NULL, ''),
+(21, 35, '654ec4269f818ef8e4cda223e275c3ca.png', 'UCLWh6yVs52WwRnjqln9stUg', 'rubiha2', 'id36575774', '', 'Люблю спидраны.'),
+(17, 31, NULL, NULL, NULL, NULL, NULL, ''),
+(13, 27, '8197751a1e1dcca0f5f802862dfb225b.jpg', 'UCUd03Vt8ypoUGJc8gUUAzHw', 'tezur0', 'bunikita', 'Tezur0', ''),
+(18, 32, NULL, NULL, NULL, NULL, NULL, ''),
+(19, 33, NULL, NULL, NULL, NULL, NULL, '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
